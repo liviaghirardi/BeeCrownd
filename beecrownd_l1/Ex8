@@ -1,0 +1,23 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+/**
+ * IMPORTANT: 
+ *      O nome da classe deve ser "Main" para que a sua solução execute
+ */
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        int X = sc.nextInt();       // distância percorrida (km)
+        double Y = sc.nextDouble(); // combustível gasto (litros)
+        
+        double consumoMedio = X / Y;
+        
+        System.out.printf("%.3f km/l\n", consumoMedio);
+        
+        sc.close();
+    }
+}

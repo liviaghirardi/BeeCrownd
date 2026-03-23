@@ -1,0 +1,25 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+/**
+ * IMPORTANT: 
+ *      O nome da classe deve ser "Main" para que a sua solução execute
+ */
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        int numero = sc.nextInt();
+        int horas = sc.nextInt();
+        double valorPorHora = sc.nextDouble();
+        
+        double salario = horas * valorPorHora;
+        
+        System.out.println("NUMBER = " + numero);
+        System.out.printf("SALARY = U$ %.2f\n", salario);
+        
+        sc.close();
+    }
+}

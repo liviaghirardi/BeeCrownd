@@ -1,0 +1,24 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+/**
+ * IMPORTANT: 
+ *      O nome da classe deve ser "Main" para que a sua solução execute
+ */
+public class Main {
+ 
+    public static void main(String[] args) throws IOException {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        String nome = sc.next();   // nome do vendedor
+        double salarioFixo = sc.nextDouble();
+        double totalVendas = sc.nextDouble();
+        
+        double totalReceber = salarioFixo + (totalVendas * 0.15);
+        
+        System.out.printf("TOTAL = R$ %.2f\n", totalReceber);
+        
+        sc.close();
+    }
+}
